@@ -83,11 +83,118 @@ header .window button:hover,
 	background: #f3e6d5;
 }
 
+.content .carousel-item {
+	position: relative;
+	top: -40px;
+	background: #fff;
+	z-index: 123 !important;
+}
+
+.content .d-block {
+	z-index: 123 !important;
+}
+
+.content img {
+	text-align: center;
+}
+
+.content .title {
+	color: #9a5924;
+	font-family: "Open Sans";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content span {
+	text-align: left !important;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
 .slider {
 	background: url(../images/mongolia-1.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 
-footer {
+.slider2 {
+	background: url(../images/mongolia-2.jpg) no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.slider2 .title {
+	color: #9a5924;
+	font-family: "Open Sans - Extrabold";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.slider2 .name {
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.slider2 .city {
+	color: #9a5924;
+	font-family: "Open Sans - Semibold";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.slider2 p {
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+footer,
+footer #navbar1,
+footer #navbar1 a {
 	background: #532805;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Open Sans - Semibold";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+footer #navbar2,
+footer #navbar2 a {
+	background: #532805;
+	color: #fff;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+footer #navbar1 {
+	border-bottom: 1px solid #dba674;
+}
+
+footer .btn {
+	background: #fff;
+	border-radius: 4px;
+	color: #222;
+	font-family: "Open Sans - Semibold";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
 }
