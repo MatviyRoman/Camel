@@ -28,10 +28,12 @@ header .window button {
 	text-transform: uppercase;
 }
 
-header .window button:hover {
+header .window button:hover,
+.aboutUs button:hover {
 	background: #613425;
 }
 
+#navbar1,
 #navbar2,
 #navbar2 a {
 	text-align: center;
@@ -53,6 +55,39 @@ header .window button:hover {
 	text-transform: uppercase;
 }
 
+.aboutUs span {
+	color: #222222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
 .aboutUs img {
 	max-height: 431px;
+}
+
+.aboutUs button {
+	border-radius: 4px;
+	background-color: #9a5924;
+	border: #9a5924;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.content {
+	background: #f3e6d5;
+}
+
+.slider {
+	background: url(../images/mongolia-1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+footer {
+	background: #532805;
 }
