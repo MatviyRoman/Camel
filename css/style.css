@@ -1,0 +1,45 @@
+header {
+	background: url(../images/header-camel.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+header .window {
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-top: 206px;
+	margin-bottom: 214px;
+}
+
+header .window button {
+	padding: 17px 27px;
+	border: #9a5924;
+	border-radius: 4px;
+	background-color: #9a5924;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+header .window button:hover {
+	background: #613425;
+}
+
+#navbar2,
+#navbar2 a {
+	text-align: center;
+	background-color: #fff;
+	color: #222;
+  	font-family: "Open Sans - Semibold";
+  	font-size: 13px;
+  	font-weight: 400;
+  	line-height: 26px;
+  	text-transform: uppercase;
+}
