@@ -32,7 +32,7 @@
               </li>
             </ul>
           </div>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1" href="#">
             <img src="images/logo.png" alt="logo">
           </a>
           <div class="collapse navbar-collapse offset-1" id="navbarSupportedContent">
@@ -54,7 +54,7 @@
           <a class="nav-link cart ml-5" href="#"><img src="images/cart.png" alt="cart"></a>
         </nav>
         <nav class="navbar navbar-expand-lg" id="navbar2">
-          <a class="nav-link mr-md-3 mr-sm-3 mr-0" href="#">Home</a>
+          <a class="nav-link active mr-md-3 mr-sm-3 mr-0" href="#">Home</a>
           <a class="nav-link mr-md-3 mr-sm-3 mr-0" href="#">Shop</a>
           <a class="nav-link mr-md-3 mr-sm-3 mr-0" href="#">about us</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -88,17 +88,28 @@
             <div class="row justify-content-center">
             <span class="pb-4">WE KNOW COLD WEATHER</span>
             <div class="w-100"></div>
-              <button type="button" class="btn btn-primary">shop now</button>
+              <button type="button" class="btn btn-primary btnShop">shop now</button>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div class="modalHeaderWindow pt-5 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+            <h2>Do you want shop now?</h2>
+            <div class="w-100 mt-4"></div>
+            <button type="button" class="btn btn-outline-success btnShop">YES</button>
+            <button type="button" class="btn btn-outline-danger btnShop ml-4">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="aboutUs pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12">
-            <img src="images/clip-art-of-camel.png" alt="camel" class="offset-1 pl-3 mb-3">
+            <img src="images/clip-art-of-camel.png" alt="camel" class="camelIcon offset-1 pl-3 pr-3 mb-3">
             <div class="w-100"></div>
             <span class="title ">About us</span>
             <div class="w-100 mb-4"></div>
@@ -110,9 +121,22 @@
               In other parts of the country the cold season is even longer. Winters are seven months old marked by dry, cold air and snowy conditions. We've created styles that let you face winter with the ability to keep yourself and your loved ones safe from the cold conditions of winter.
             </span>
             <div class="w-100 mb-5"></div>
-            <button type="button" class="btn btn-primary mb-5">read more</button>
+            <div id="readMore">
+              <button type="button" class="btn btn-primary readMore mb-5">read more</button>
+            </div>
+            <div id="noReadMore">
+              <span>
+                Since 2013 The camel company of Canada has been designing, producing, importing and marketing camel wool products throughout Ontario, Canada! 
+                We have a history of dealing with cold climate back dating the cold winter days’ in Western Mountains bordering Iran, Turkey and Iraq in the middle east at altitudes of 1500 feet above sea levels.
+                <div class="w-100 mb-4"></div>
+                In Ontario, Canada cold season lasts four to 6 months of the year.
+                In other parts of the country the cold season is even longer. Winters are seven months old marked by dry, cold air and snowy conditions. We've created styles that let you face winter with the ability to keep yourself and your loved ones safe from the cold conditions of winter.
+              </span>
+              <div class="w-100"></div>
+              <button type="button" class="btn btn-primary readMore mt-5 mb-5">No read more</button>
+            </div>
           </div>
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 mb-md-0 mb-4">
             <img src="images/camel2.png" alt="camel2" class="img-fluid">
           </div>
         </div>
@@ -130,7 +154,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="d-block w-100 p-4">
-                        <img src="images/clip-art-of-camel.png" alt="camel">
+                        <img src="images/clip-art-of-camel.png" alt="camel" class="pl-3 pr-3 camelIcon">
                         <div class="w-100"></div>
                         <div class="title mt-3 mb-3">
                           Body in Cold Weather
@@ -145,7 +169,7 @@
                     </div>
                     <div class="carousel-item">
                       <div class="d-block w-100 p-4">
-                        <img src="images/clip-art-of-camel.png" alt="camel">
+                        <img src="images/clip-art-of-camel.png" alt="camel" class="pl-3 pr-3 camelIcon">
                         <div class="w-100"></div>
                         <div class="title mt-3 mb-3">
                           Body in Cold Weather
@@ -179,7 +203,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item pb-1 active">
                       <div class="d-block w-100 p-4 mb-5">
-                        <img src="images/clip-art-of-camel.png" alt="camel">
+                        <img src="images/clip-art-of-camel.png" alt="camel" class="pl-3 pr-3 camelIcon">
                         <div class="w-100"></div>
                         <div class="title mt-3 mb-3">
                           Cold feet
@@ -194,7 +218,7 @@
                     </div>
                     <div class="carousel-item pb-1">
                       <div class="d-block w-100 p-4 mb-5">
-                        <img src="images/clip-art-of-camel.png" alt="camel">
+                        <img src="images/clip-art-of-camel.png" alt="camel" class="pl-3 pr-3 camelIcon">
                         <div class="w-100"></div>
                         <div class="title mt-3 mb-3">
                           Cold feet
@@ -223,24 +247,30 @@
         </div>
       </div>
     </div>
-    <div class="slider">
+    <div class="slider p-5">
       <div class="container">
         <div class="row justify-content-center">
-          <div id="carouselExampleIndicators" class="carousel slide col-10" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <img src="images/slider1.png">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>How Does Camel Wool work? </h5><div class="mt-4"></div>
-                  <p class="pt-4">
+                  <img src="images/clip-art-of-camel.png" alt="camel" class="pl-3 pr-3 mb-2 camelIcon">
+                  <h5>How Does Camel Wool work?</h5>
+                  <p class="pt-2 mb-5">
                     Camel wool fibers are not straight but are bent forming crimps. The mechanical wool action on the body has a micro-massaging effect on the body which helps blood supply to the organ.
+                    <br>
                     The springiness, resiliency, thermal conductivity of camel wool makes it very favorable for therapeutic use,
                     Camel wool products are breathable, exchanging air between body part and its surroundings. Camel wool also has thermostatic properties which protects and insulates in cold weather as well as keep is cool in warmer temperature.
                     “For example, peripheral vascular disease associated with metabolic disease ( i.e. Diabetes’s, arteriosus ) arthritis, paresis and paralysis of peripheral nervous all require intervention of yielding heat therapy. Wool products such as garments linings shoulder straps, knee pads and lumber pads exert a very positive effect on the above mentioned circulatory disturbances.
                   </p>
+                  <span>
+                    <a href="#" class="mr-4">Page 1</a><a href="#">Page 2</a>
+                  </span>
                 </div>
               </div>
               <!-- <div class="carousel-item">
@@ -268,10 +298,18 @@
         </div>
       </div>
     </div>
+    <div class="manufacturing">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </div>
     <div class="slider2 pt-5 pb-5">
       <div class="container">
         <div class="row justify-content-center">
-          <img src="images/clip-art-of-camel-white.png" alt="camel" class="mb-2">
+          <img src="images/clip-art-of-camel-white.png" alt="camel" class="pl-3 pr-3 camelIcon mb-2">
           <div class="w-100"></div>
           <div class="title mb-4">
             What Our Customers Are Saying...

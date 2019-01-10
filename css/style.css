@@ -1,6 +1,15 @@
+.active {
+  border-bottom: 2px solid #af6f3a;
+}
+
+.camelIcon {
+	border-bottom: 2px solid #dba674;
+	padding-bottom: 3px;
+}
+
 header {
 	background: url(../images/header-camel.jpg) no-repeat;
-	background-size: 100% 100%;
+	background-position: center;
 }
 
 header .window {
@@ -8,7 +17,7 @@ header .window {
 	font-family: "Open Sans";
 	font-size: 40px;
 	font-weight: bold;
-	line-height: 26px;
+	/*line-height: 26px;*/
 	text-transform: uppercase;
 	background-color: rgba(255, 255, 255, 0.6);
 	margin-top: 206px;
@@ -24,7 +33,7 @@ header .window button {
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 26px;
+	/*line-height: 26px;*/
 	text-transform: uppercase;
 }
 
@@ -33,9 +42,32 @@ header .window button:hover,
 	background: #613425;
 }
 
+.modalHeaderWindow {
+	background-color: rgba(255, 255, 255, 0.8);
+	display: none;
+	border: 1px solid #613425;
+	border-radius: 25px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	text-transform: uppercase;
+	transform: translate(-50%, -50%);
+	z-index: 777;
+}
+
 #navbar1,
+#navbar1 a {
+	text-align: center;
+	background-color: #fff;
+	color: #222;
+  	font-family: "Open Sans - Semibold";
+  	font-size: 13px;
+  	font-weight: 400;
+  	/*line-height: 26px;*/
+  	text-transform: uppercase;
+}
+
 #navbar2,
-#navbar1 a,
 #navbar2 a {
 	text-align: center;
 	background-color: #fff;
@@ -43,7 +75,7 @@ header .window button:hover,
   	font-family: "Open Sans - Semibold";
   	font-size: 13px;
   	font-weight: 400;
-  	line-height: 26px;
+  	/*line-height: 26px;*/
   	text-transform: uppercase;
 }
 
@@ -70,11 +102,21 @@ header .window button:hover,
 	left: -4px;
 }
 
+#navbar2:before{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:160%;
+    transform: translate(-50%, -50%);
+    border-top: 1px solid rgba(219, 166, 116, 0.35);
+    content:"";
+}
+
 .aboutUs span.title {
 	color: #9a5924;
 	font-family: "Open Sans - Extrabold";
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: bold;
 	line-height: 26px;
 	text-transform: uppercase;
 }
@@ -101,6 +143,14 @@ header .window button:hover,
 	font-weight: 400;
 	line-height: 26px;
 	text-transform: uppercase;
+}
+
+.aboutUs #ReadMore {
+	display: block;
+}
+
+.aboutUs #noReadMore {
+	display: none;
 }
 
 .content {
@@ -150,7 +200,25 @@ header .window button:hover,
 
 .slider {
 	background: url(../images/mongolia-1.jpg) no-repeat;
+	background-position: center;
 	background-size: 100% 100%;
+	color: #222;
+}
+
+.slider h5 {
+	color: #9a5924;
+	font-family: "Open Sans - Extrabold";
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.slider p {
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
 }
 
 .slider2 {
@@ -250,4 +318,63 @@ footer .btn {
 	font-weight: 400;
 	line-height: 26px;
 	text-transform: uppercase;
+}
+
+
+
+
+@media only screen and (max-width: 1199px) {
+	header .window {
+	    font-size: 25px;
+	}
+
+  	#navbar2, #navbar2 a {
+	    font-size: 10px;
+	}
+
+	#navbar1, #navbar1 a {
+	    font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.modalHeaderWindow h2 {
+	    font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	header .window {
+	    font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	header .window {
+	    font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	header .window {
+	    font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 421px) {
+	.modalHeaderWindow h2 {
+	    font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	header .window {
+	    font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 343px) {
+	.modalHeaderWindow h2 {
+	    font-size: 10px;
+	}
 }
