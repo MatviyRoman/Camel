@@ -221,6 +221,61 @@ header .window button:hover,
 	text-align: left;
 }
 
+.manufacturing {
+	background: #fff;
+}
+
+.manufacturing .camelIcon {
+	text-align: center;
+}
+
+.manufacturing .title {
+	color: #9a5924;
+	font-family: "Open Sans - Extrabold";
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.products {
+	background: #f3e6d5;
+	text-align: center;
+}
+
+.products .title {
+	color: #9a5924;
+	font-family: "Open Sans - Extrabold";
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.products span {
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.products .card {
+	border-radius: 0;
+}
+
+.products .card .btn {
+	background: rgba(243, 230, 213, 0.8);
+	border: rgba(243, 230, 213, 0.8);
+	border-radius: 0;
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	top: 23%;
+	left: 9%;
+	text-transform: uppercase;
+}
+
 .slider2 {
 	background: url(../images/mongolia-2.jpg) no-repeat;
 	-webkit-background-size: 100% 100%;
