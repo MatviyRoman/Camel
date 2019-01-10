@@ -12,6 +12,12 @@ $(window).on('load', function(){
 })
 
 $(window).on('load', function(){
+	$('.error').click(function(){
+		$('.modalProductsWindow').toggle();
+	})
+})
+
+$(window).on('load', function(){
 	$('.readMore').click(function(){
 		$('#readMore').toggle();
 		$('#noReadMore').toggle();

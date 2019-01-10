@@ -55,6 +55,31 @@ header .window button:hover,
 	z-index: 777;
 }
 
+.modalProductsWindow {
+	background-color: rgba(188, 19, 57, 0.8);
+	color: #fff;
+	display: none;
+	border: 1px solid #613425;
+	border-radius: 25px;
+	font-size: 20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	text-transform: uppercase;
+	transform: translate(-50%, -50%);
+	z-index: 777;
+}
+
+.modalProductsWindow h2 {
+	font-size: 20px;
+}
+
+.modalProductsWindow .btn {
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+}
+
 #navbar1,
 #navbar1 a {
 	text-align: center;
@@ -77,6 +102,10 @@ header .window button:hover,
   	font-weight: 400;
   	/*line-height: 26px;*/
   	text-transform: uppercase;
+}
+
+#navbar2 a:hover:not(.socialIcon) {
+  	border-bottom: 2px solid #af6f3a;
 }
 
 #navbar1 .btn {
@@ -262,6 +291,11 @@ header .window button:hover,
 	border-radius: 0;
 }
 
+.products img {
+	outline: 1px solid rgba(243, 230, 213, 0.7);
+    outline-offset: -15px;
+}
+
 .products .card .btn {
 	background: rgba(243, 230, 213, 0.8);
 	border: rgba(243, 230, 213, 0.8);
@@ -274,6 +308,36 @@ header .window button:hover,
 	top: 23%;
 	left: 9%;
 	text-transform: uppercase;
+}
+
+.products .card .btn:hover {
+	background: rgba(153, 112, 82, 0.8);
+	border: rgba(243, 230, 213, 0.8);
+	border-radius: 0;
+	color: #222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	top: 23%;
+	left: 9%;
+	text-transform: uppercase;
+}
+
+.products .btn {
+	border-radius: 4px;
+	background-color: #9a5924;
+	border: #9a5924;
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.products .btn:hover {
+	border-radius: 4px;
+	background-color: #532805;
 }
 
 .slider2 {
