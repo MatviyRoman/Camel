@@ -1,4 +1,8 @@
-.active {
+body{
+	user-select: none;
+}
+
+.active:not(li,a) {
   border-bottom: 2px solid #af6f3a;
 }
 
@@ -10,6 +14,7 @@
 header {
 	background: url(../images/header-camel.jpg) no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 header .window {
@@ -17,23 +22,22 @@ header .window {
 	font-family: "Open Sans";
 	font-size: 40px;
 	font-weight: bold;
-	/*line-height: 26px;*/
 	text-transform: uppercase;
 	background-color: rgba(255, 255, 255, 0.6);
-	margin-top: 206px;
-	margin-bottom: 214px;
+	margin-top: 21%;
+	margin-bottom: 21%;
 }
 
 header .window button {
-	padding: 17px 27px;
+	padding: 1.7% 2.7%;
 	border: #9a5924;
+	max-width: 130px;
 	border-radius: 4px;
 	background-color: #9a5924;
 	color: #ffffff;
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 400;
-	/*line-height: 26px;*/
 	text-transform: uppercase;
 }
 
@@ -56,8 +60,8 @@ header .window button:hover,
 }
 
 .modalProductsWindow {
-	background-color: rgba(188, 19, 57, 0.8);
-	color: #fff;
+	background-color: rgba(255, 255, 255, .8);
+	color: #222;
 	display: none;
 	border: 1px solid #613425;
 	border-radius: 25px;
@@ -75,9 +79,13 @@ header .window button:hover,
 }
 
 .modalProductsWindow .btn {
-	border: 1px solid #fff;
-	color: #fff;
+	border: 1px solid #613425;
+	color: #222;
 	text-transform: uppercase;
+}
+
+#line {
+	border-top: 1px solid rgba(219, 166, 116, 0.35);
 }
 
 #navbar1,
@@ -88,7 +96,6 @@ header .window button:hover,
   	font-family: "Open Sans - Semibold";
   	font-size: 13px;
   	font-weight: 400;
-  	/*line-height: 26px;*/
   	text-transform: uppercase;
 }
 
@@ -100,12 +107,15 @@ header .window button:hover,
   	font-family: "Open Sans - Semibold";
   	font-size: 13px;
   	font-weight: 400;
-  	/*line-height: 26px;*/
   	text-transform: uppercase;
 }
 
-#navbar2 a:hover:not(.socialIcon) {
+#navbar2 a:hover {
   	border-bottom: 2px solid #af6f3a;
+}
+
+.socialIcon:hover {
+  	border-bottom: 0 solid #af6f3a;
 }
 
 #navbar1 .btn {
@@ -116,6 +126,10 @@ header .window button:hover,
 	font-weight: 400;
 	line-height: 26px;
 	text-transform: uppercase;
+}
+
+.btn:focus {
+	box-shadow: 0 0 0 0.2rem rgba(175, 111, 58, .25);
 }
 
 #navbar1 .cart {
@@ -129,16 +143,6 @@ header .window button:hover,
 #navbar1 .cart img {
 	position: relative;
 	left: -4px;
-}
-
-#navbar2:before{
-    position:absolute;
-    top:0;
-    left:50%;
-    width:160%;
-    transform: translate(-50%, -50%);
-    border-top: 1px solid rgba(219, 166, 116, 0.35);
-    content:"";
 }
 
 .aboutUs span.title {
@@ -186,26 +190,36 @@ header .window button:hover,
 	background: #f3e6d5;
 }
 
-.content .carousel-item {
+.content button {
+	border: 1px solid #9a5924;
+	height: 6px;
+}
+
+.content .left>.pic,
+.content .right>.pic {
 	position: relative;
-	top: -40px;
+	top: 45px;
+}
+
+.content .carousel-item {
 	background: #fff;
 	z-index: 123 !important;
 }
 
-.content .d-block {
-	z-index: 123 !important;
-}
-
-.content .left .img {
+/*.content .left .img {
 	background: url(../images/img-1.jpg) no-repeat;
 	background-size: cover;
 	height: 320px;
 	position: relative;
 	z-index: 9;
-}
+}*/
 
 .content img {
+	text-align: center;
+}
+
+.content .prev,
+.content .next {
 	text-align: center;
 }
 
@@ -227,11 +241,53 @@ header .window button:hover,
 	line-height: 26px;
 }
 
+.content .camelIcon {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.content .sliderFooter {
+	background: #fff;
+	position: absolute;
+}
+
+.content .sliderFooter img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.content .prev,
+.content .next {
+	cursor: pointer;
+}
+
 .slider {
 	background: url(../images/mongolia-1.jpg) no-repeat;
+	/*background-position: center;
+	background-size: 100% 100%;*/
 	background-position: center;
-	background-size: 100% 100%;
+	background-size: cover;
 	color: #222;
+	text-align: center;
+}
+
+.slider a {
+	color: #9a5924;
+	font-family: "Open Sans - Extrabold";
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.slider a.active {
+	border-bottom: 2px solid #9a5924;
+}
+
+.slider a:hover {
+	border-bottom: 2px solid #9a5924;
 }
 
 .slider h5 {
@@ -248,6 +304,10 @@ header .window button:hover,
 	font-size: 16px;
 	font-weight: 400;
 	text-align: left;
+}
+
+.slider .carousel-item {
+	background-color: rgba(243, 230, 213, .75);
 }
 
 .manufacturing {
@@ -306,22 +366,12 @@ header .window button:hover,
 	font-weight: 700;
 	position: absolute;
 	top: 23%;
-	left: 9%;
+	left: 8.5%;
 	text-transform: uppercase;
 }
 
 .products .card .btn:hover {
 	background: rgba(153, 112, 82, 0.8);
-	border: rgba(243, 230, 213, 0.8);
-	border-radius: 0;
-	color: #222;
-	font-family: "Open Sans";
-	font-size: 16px;
-	font-weight: 700;
-	position: absolute;
-	top: 23%;
-	left: 9%;
-	text-transform: uppercase;
 }
 
 .products .btn {
@@ -346,7 +396,15 @@ header .window button:hover,
 	background-size: 100% 100%;
 }
 
-.slider li:before:active {
+.slider2 .carousel-indicators li {
+	width: 8px;
+	height: 8px;
+	background-color: #dba674;
+	border-radius: 100%;
+	opacity: 1 !important;
+}
+
+.slider2 .carousel-indicators .active {
 	background-color: #9a5924;
 }
 
@@ -368,7 +426,6 @@ header .window button:hover,
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 26px;
 }
 
 .slider2 .city {
@@ -376,7 +433,6 @@ header .window button:hover,
 	font-family: "Open Sans - Semibold";
 	font-size: 13px;
 	font-weight: 400;
-	line-height: 26px;
 }
 
 .slider2 p {
@@ -385,9 +441,7 @@ header .window button:hover,
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 26px;
 	text-align: left;
-	/*border-top: 1px solid #9a5924;*/
 }
 
 .slider2 p:before{
@@ -456,9 +510,21 @@ footer .btn {
 	}
 }
 
+@media only screen and (max-width: 950px) {
+	.modalProductsWindow h2 {
+	    font-size: 17px;
+	}
+}
+
 @media only screen and (max-width: 900px) {
 	.modalHeaderWindow h2 {
 	    font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.modalProductsWindow h2 {
+	    font-size: 15px;
 	}
 }
 
@@ -466,16 +532,71 @@ footer .btn {
 	header .window {
 	    font-size: 20px;
 	}
+
+	.slider2 .title {
+	    font-size: 20px;
+	}
+
+	.slider2 p {
+	    font-size: 13px;
+	}
+
+	.slider2 .img-fluid {
+	    max-width: 20%;
+	    height: auto;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.modalProductsWindow h2 {
+	    font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 625px) {
+	.modalProductsWindow h2 {
+	    font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.modalProductsWindow h2 {
+	    font-size: 8px;
+	}
 }
 
 @media only screen and (max-width: 470px) {
 	header .window {
 	    font-size: 17px;
 	}
+
+		.slider2 .title {
+	    font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 492px) {
+	.slider2 p {
+	    font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 444px) {
+	.slider2 .name {
+	    font-size: 13px;
+	}
+
+	.slider2 .city {
+	    font-size: 10px;
+	}
 }
 
 @media only screen and (max-width: 430px) {
 	header .window {
+	    font-size: 15px;
+	}
+
+		.slider2 .title {
 	    font-size: 15px;
 	}
 }
@@ -486,8 +607,27 @@ footer .btn {
 	}
 }
 
+@media only screen and (max-width: 410px) {
+	.slider2 .img-fluid {
+	    max-width: 16%;
+	}
+
+	.slider2 .name {
+	    font-size: 10px;
+	}
+
+	.slider2 .city,
+	.slider2 p {
+	    font-size: 8px;
+	}
+}
+
 @media only screen and (max-width: 370px) {
 	header .window {
+	    font-size: 13px;
+	}
+
+		.slider2 .title {
 	    font-size: 13px;
 	}
 }
@@ -495,5 +635,9 @@ footer .btn {
 @media only screen and (max-width: 343px) {
 	.modalHeaderWindow h2 {
 	    font-size: 10px;
+	}
+
+	.slider2 .city, .slider2 p {
+	    font-size: 7px;
 	}
 }
