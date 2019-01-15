@@ -3,12 +3,20 @@ body{
 }
 
 .active:not(li,a) {
-  border-bottom: 2px solid #af6f3a;
+	border-bottom: 2px solid #af6f3a;
+	font-family: "Raleway";
+	font-weight: 600;
+	position: relative;
 }
 
 .camelIcon {
 	border-bottom: 2px solid #dba674;
 	padding-bottom: 3px;
+}
+
+.semiBold {
+	font-size: 16px;
+	font-weight: 600 !important;
 }
 
 header {
@@ -18,58 +26,59 @@ header {
 }
 
 header .window {
+	background-color: rgba(255, 255, 255, 0.6);
 	color: #222;
 	font-family: "Open Sans";
 	font-size: 40px;
-	font-weight: bold;
-	text-transform: uppercase;
-	background-color: rgba(255, 255, 255, 0.6);
+	font-weight: 800;
 	margin-top: 21%;
 	margin-bottom: 21%;
+	text-transform: uppercase;
 }
 
 header .window button {
-	padding: 1.7% 2.7%;
-	border: #9a5924;
-	max-width: 130px;
-	border-radius: 4px;
 	background-color: #9a5924;
+	border: #9a5924;
+	border-radius: 4px;
 	color: #ffffff;
 	font-family: "Open Sans";
 	font-size: 14px;
 	font-weight: 400;
+	max-width: 130px;
 	text-transform: uppercase;
+	padding: 1.7% 2.7%;
 }
 
 header .window button:hover,
 .aboutUs button:hover {
 	background: #613425;
+	color: #fff;
 }
 
 .modalHeaderWindow {
 	background-color: rgba(255, 255, 255, 0.8);
-	display: none;
 	border: 1px solid #613425;
 	border-radius: 25px;
-	position: fixed;
-	top: 50%;
+	display: none;
 	left: 50%;
+	position: fixed;
 	text-transform: uppercase;
+	top: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 777;
 }
 
 .modalProductsWindow {
 	background-color: rgba(255, 255, 255, .8);
-	color: #222;
-	display: none;
 	border: 1px solid #613425;
 	border-radius: 25px;
+	color: #222;
+	display: none;
 	font-size: 20px;
-	position: fixed;
-	top: 50%;
 	left: 50%;
+	position: fixed;
 	text-transform: uppercase;
+	top: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 777;
 }
@@ -88,29 +97,30 @@ header .window button:hover,
 	border-top: 1px solid rgba(219, 166, 116, 0.35);
 }
 
-#navbar1,
-#navbar1 a {
-	text-align: center;
+#navbar-head,
+#navbar-head a {
 	background-color: #fff;
 	color: #222;
-  	font-family: "Open Sans - Semibold";
+  	font-family: "Open Sans";
   	font-size: 13px;
   	font-weight: 400;
+  	text-align: center;
   	text-transform: uppercase;
 }
 
-#navbar2,
-#navbar2 a {
-	text-align: center;
+#navbar-head-2,
+#navbar-head-2 a {
 	background-color: #fff;
+	border-bottom: 2px solid #fff;
 	color: #222;
-  	font-family: "Open Sans - Semibold";
+  	font-family: "Open Sans";
   	font-size: 13px;
-  	font-weight: 400;
+  	font-weight: 600;
+  	text-align: center;
   	text-transform: uppercase;
 }
 
-#navbar2 a:hover {
+#navbar-head-2 a:hover {
   	border-bottom: 2px solid #af6f3a;
 }
 
@@ -118,13 +128,13 @@ header .window button:hover,
   	border-bottom: 0 solid #af6f3a;
 }
 
-#navbar1 .btn {
+#navbar-head .btn {
 	border-radius: 4px;
 	border: 1px solid #af6f3a;
-	font-family: "Open Sans - Semibold";
+	font-family: "Open Sans";
 	font-size: 13px;
-	font-weight: 400;
-	line-height: 26px;
+	font-weight: 600;
+	/*line-height: 26px;*/
 	text-transform: uppercase;
 }
 
@@ -132,24 +142,41 @@ header .window button:hover,
 	box-shadow: 0 0 0 0.2rem rgba(175, 111, 58, .25);
 }
 
-#navbar1 .cart {
+#navbar-head .navbar-brand img {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+#navbar-head .navbar-brand img:hover {
+	transform:rotate(720deg);
+}
+
+#navbar-head .cart {
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
 	border: 1px solid #af6f3a;
 	background-color: #fff;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
 }
 
-#navbar1 .cart img {
+#navbar-head .cart:hover {
+	transform:rotate(720deg);
+}
+
+#navbar-head .cart img {
 	position: relative;
 	left: -4px;
 }
 
 .aboutUs span.title {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	line-height: 26px;
 	text-transform: uppercase;
 }
@@ -206,14 +233,6 @@ header .window button:hover,
 	z-index: 123 !important;
 }
 
-/*.content .left .img {
-	background: url(../images/img-1.jpg) no-repeat;
-	background-size: cover;
-	height: 320px;
-	position: relative;
-	z-index: 9;
-}*/
-
 .content img {
 	text-align: center;
 }
@@ -227,13 +246,13 @@ header .window button:hover,
 	color: #9a5924;
 	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	line-height: 26px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.content span {
+.content p {
 	text-align: left !important;
 	font-family: "Open Sans";
 	font-size: 16px;
@@ -247,19 +266,21 @@ header .window button:hover,
 	transform: translate(-50%);
 }
 
-.content .sliderFooter {
+.content .contentSliderFooter {
 	background: #fff;
-	position: absolute;
+	text-align: center;
 }
 
-.content .sliderFooter img {
+.content .contentSliderFooter .active {
 	position: relative;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	z-index: 444;
+	background: url(../images/btnActive.png);
 }
 
 .content .prev,
-.content .next {
+.content .next,
+.content .prev1,
+.content .next1 {
 	cursor: pointer;
 }
 
@@ -275,9 +296,9 @@ header .window button:hover,
 
 .slider a {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 800;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -292,21 +313,22 @@ header .window button:hover,
 
 .slider h5 {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 }
 
 .slider p {
-	color: #222;
+	color: #222222;
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 400;
+	line-height: 26px;
 	text-align: left;
 }
 
-.slider .carousel-item {
+.slider .sliderCarousel {
 	background-color: rgba(243, 230, 213, .75);
 }
 
@@ -318,13 +340,32 @@ header .window button:hover,
 	text-align: center;
 }
 
+.manufacturing .made {
+  	-webkit-animation: rotation 30s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
 .manufacturing .title {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.manufacturing p {
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .products {
@@ -334,9 +375,9 @@ header .window button:hover,
 
 .products .title {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 }
 
@@ -349,6 +390,12 @@ header .window button:hover,
 
 .products .card {
 	border-radius: 0;
+}
+
+.products .card-text {
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .products img {
@@ -414,9 +461,9 @@ header .window button:hover,
 
 .slider2 .title {
 	color: #9a5924;
-	font-family: "Open Sans - Extrabold";
+	font-family: "Open Sans";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 800;
 	line-height: 26px;
 	text-transform: uppercase;
 }
@@ -430,9 +477,9 @@ header .window button:hover,
 
 .slider2 .city {
 	color: #9a5924;
-	font-family: "Open Sans - Semibold";
+	font-family: "Open Sans";
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .slider2 p {
@@ -454,15 +501,20 @@ header .window button:hover,
     content:"";
 }
 
+footer #navbar1 {
+	border-bottom: 1px solid #dba674;
+}
+
 footer,
 footer #navbar1,
 footer #navbar1 a {
+	text-align: center;
 	background: #532805;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: "Open Sans - Semibold";
+	font-family: "Open Sans";
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 26px;
 }
 
@@ -476,37 +528,78 @@ footer #navbar2 a {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 26px;
+	/*text-align: center;*/
 }
 
-footer #navbar1 {
-	border-bottom: 1px solid #dba674;
+footer #navbar1 a {
+	border-bottom: 2px solid #532805;
 }
 
-footer .btn {
+footer #navbar1 a:hover {
+  	border-bottom: 2px solid #af6f3a;
+}
+
+.socialIcon:hover {
+  	/*-webkit-animation: rotation 2s infinite linear;*/
+	-ms-transform: scale(1.5, 1.5); /* IE 9 */
+	-webkit-transform: scale(1.5, 1.5); /* Safari */
+	transform: scale(1.5, 1.5);
+}
+
+/*@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}*/
+
+footer #navbar1 .btn {
 	background: #fff;
 	border-radius: 4px;
 	color: #222;
-	font-family: "Open Sans - Semibold";
+	font-family: "Open Sans";
 	font-size: 13px;
-	font-weight: 400;
-	line-height: 26px;
+	font-weight: 600;
+	/*line-height: 26px;*/
 	text-transform: uppercase;
+}
+
+.btn:focus {
+	box-shadow: 0 0 0 0.2rem rgba(175, 111, 58, .25);
 }
 
 
 
+@media only screen and (max-width: 1258px) {
+	.slider p {
+		line-height: 20px;
+	}
+}
 
 @media only screen and (max-width: 1199px) {
 	header .window {
 	    font-size: 25px;
 	}
 
-  	#navbar2, #navbar2 a {
+  	#navbar-head,
+  	#navbar-head a,
+  	#navbar2,
+  	#navbar2 a {
 	    font-size: 10px;
 	}
 
+	#navbar-head-2,
+	#navbar-head-2 a,
 	#navbar1, #navbar1 a {
 	    font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.sliderImg {
+		height: 450px;
 	}
 }
 
@@ -519,6 +612,18 @@ footer .btn {
 @media only screen and (max-width: 900px) {
 	.modalHeaderWindow h2 {
 	    font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.sliderImg {
+	    height: 480px;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.slider h5 {
+	    font-size: 25px;
 	}
 }
 
@@ -598,6 +703,15 @@ footer .btn {
 
 		.slider2 .title {
 	    font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.aboutUs span.title,
+	.content .title,
+	.manufacturing .title,
+	.products .title {
+	    font-size: 25px;
 	}
 }
 
