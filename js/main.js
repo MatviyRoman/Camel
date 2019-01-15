@@ -118,7 +118,7 @@ $(window).on('load', function(){
 // right contentSlider Start
 $(window).on('load', function(){
 	$('.right .contentSlider').carousel({
-	  	interval: 3500,
+	  	interval: 3000,
 	  	pause: 'hover',
 	  	wrap: true
 	})
@@ -140,12 +140,12 @@ $(window).on('load', function(){
     	$('.right .contentSlider .next1').addClass("active");
     	$('.right .contentSlider').carousel('next')
     },0);}
-    setInterval(nextSlide,3500);
+    setInterval(nextSlide,3000);
     var prevSlide = function myStart() { setTimeout( function(){
         $('.right .contentSlider .next1').removeClass("active");
     	$('.right .contentSlider .prev1').addClass("active");
     	$('.right .contentSlider').carousel('prev')
     },0);}
-    setInterval(prevSlide,7000);
+    setInterval(prevSlide,6000);
 })
 // right contentSlider End
